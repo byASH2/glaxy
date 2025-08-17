@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('/uploads/2022/11/bg_mars.png');
+    background-size: cover;
+    background-position: center center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+.arrow-next {
+    font-size: 5em;
+    margin: 0;
+    cursor: pointer;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    background: #D1BBAA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5em 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+.section1 {
+    background-color: #D1BBAA;
+}
+
+.section2 {
+    background-color: #C2AB99;
+}
+
+.section4 {
+    background-color: #D1BBAA;
+}
+
+.section3 {
+    background-color: #C2AB99;
+}
+
+nav {
+    width: 100vw;
+    padding: 1em 0 1em;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.nav-item {
+    width: fit-content;
+    padding: .5em;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    margin-right: 1em;
+    user-select: none;
+    cursor: pointer;
+}
+
+#team > h1,
+#merch > h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    text-align: left;
+    width: 80vw;
+}
+
+.team-wrapper,
+.about-wrapper,
+.merch-wrapper {
+    width: 80vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+#about > h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    text-align: left;
+    width: 80vw;
+}
+
+.about-wrapper {
+    flex-direction: column;
+}
+
+.about-wrapper p{
+    width: 100%;
+}
+
+.team-item,
+.merch-item {
+    width: 22vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.merch-item {
+    width: 15vw;
+}
+
+.team-item-top,
+.merch-item-top {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    border: 5px solid white;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.team1 .team-item-top {
+    background: url(/uploads/2022/11/astr1.png);
+    background-size: cover;
+}
+
+.team2 .team-item-top {
+    background: url(/uploads/2022/11/astr2.png);
+    background-size: cover;
+}
+
+.team3 .team-item-top {
+    background: url(/uploads/2022/11/astr3.png);
+    background-size: cover;
+}
+
+.team-item-bottom h2,
+.merch-item-bottom h2 {
+    text-transform: uppercase;
+}
+
+.merch-item-bottom {
+    width: 100%;
+}
+
+.merch-item-bottom h2 {
+    font-size: 1em;
+}
+
+.merch-item-bottom p {
+    font-size: .8em;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.merch1 .merch-item-top {
+    background: url(/uploads/2022/11/plate.png);
+    background-size: cover;
+
+}
+
+.merch2 .merch-item-top {
+    background: url(/uploads/2022/11/mug.png);
+    background-size: cover;
+}
+
+.merch3 .merch-item-top {
+    background: url(/uploads/2022/11/rocket_model.png);
+    background-size: cover;
+}
+
+.merch4 .merch-item-top {
+    background: url(/uploads/2022/11/rover.png);
+    background-size: cover;
+}
+
+.submit-wrapper {
+    width: 60vw;
+}
+
+.submit-wrapper > h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    text-align: left;
+    width: 60vw;
+}
+
+.submit-form {
+    width: 100%;
+    display: flex;
+    border: 1px solid #5D4229;
+    border-bottom: none;
+    box-sizing: border-box;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 1em;
+}
+
+.submit-btn-row{
+    width: 100%;
+    display: flex;
+}
+
+.submit-btn {
+    width: 50%;
+    box-sizing: border-box;
+    background: #C2AB99;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.submit-btn-calc {
+    border-bottom-left-radius: 5px;
+    padding: .5em;
+    border-right: .5px solid #D1BBAA;
+    border-left: 1px solid #5D4229;
+    border-bottom: 1px solid #5D4229;
+}
+
+.submit-btn-send {
+    border-bottom-right-radius: 5px;
+    padding: .5em;
+    border-left: .5px solid #D1BBAA;
+    border-right: 1px solid #5D4229;
+    border-bottom: 1px solid #5D4229;
+}
+
+.submit-form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.submit-input,
+.submit-select {
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    border: none;
+    padding: .5em;
+    border-bottom: 1px solid #5D4229;
+    font-size: 1.1em;
+    box-sizing: border-box;
+}
+
+.submit-input:active,
+.submit-input:focus,
+.submit-select:active,
+.submit-select:focus {
+    border-bottom: 1px solid #5D4229;
+    outline: none;
+}
+
+.submit-select {
+    /* border: none; */
+    padding: calc(.5em - 1px);
+}
+
+.submit-input-label {
+    font-size: .7em;
+    margin: 0 0 1em 0;
+    padding-left: .7em;
+}
+
+.submit-input-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.group {
+    width: calc(50% - 2px);
+    margin: 0;
+    padding: 0;
+}
+
+.row-item {
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.add-to-cart-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.add-to-cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5em;
+    font-size: .8em;
+    aspect-ratio: 1 / 1;
+    color: white;
+    background: #5D4229;
+    border-radius: 2px;
+    width: fit-content;
+    user-select: none;
+}
+
+.add-to-cart-btn:hover {
+    background: #8a623d;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:active {
+    background: #5D4229;
+}
+
+.cart-amount {
+    background: white;
+    color: black;
+    border-radius: 20%;
+    padding: 0 .2em;
+}
